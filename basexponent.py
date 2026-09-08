@@ -1,6 +1,11 @@
-base = float(input("enter the base:"))
-exponent = float(input("enter the exponent:"))
+# Program to handle positive and negative exponents
 
-result = base ** exponent
+base = float(input("Enter the base: "))
+exponent = int(input("Enter the exponent: "))
 
-print("result : ",result)
+if exponent >= 0:
+    result = base ** exponent
+else:
+    result = 1 / (base ** abs(exponent))
+
+print("Result =", result)
